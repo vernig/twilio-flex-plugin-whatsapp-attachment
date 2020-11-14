@@ -1,0 +1,7 @@
+{
+  "name": "twilio-flex-plugin-whatsapp-attachment",
+  "version": "1.0.0",
+  "description": "Flex plugin and Serverless for receive WhatsApp attachment in Flex",
+  "author": "gverni@twilio.com",
+  "license": "ISC"
+}
