@@ -12,7 +12,7 @@ function deployServerless() {
   return new Promise((resolve, reject) => {
     deploySpinner = ora('Deploying Serverless').start();
     const { exec } = require('child_process');
-    const twilioRun = exec('npm run serverless:deploy', (error, stdout, stderr) => {
+    const twilioRun = exec('npm run deploy', (error, stdout, stderr) => {
       deploySpinner.stop();
       if (error) {
         console.error(error);
