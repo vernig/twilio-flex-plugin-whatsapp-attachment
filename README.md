@@ -1,6 +1,6 @@
 # Flex plugin and Serverless for WhatsApp attachment 
 
-![image](https://user-images.githubusercontent.com/54728384/99153991-4049c300-26a4-11eb-858a-4cb32a898152.png)
+![image](https://user-images.githubusercontent.com/54728384/99662733-8f557680-2a5d-11eb-8693-2cbd269a1bf4.png)
 
 This repo contains a Flex plugin and the Twilio serverless function needed to receive WhatsApp attachments in Flex. 
 
