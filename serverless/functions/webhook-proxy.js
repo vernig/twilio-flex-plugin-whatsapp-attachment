@@ -54,7 +54,7 @@ exports.handler = function (context, event, callback) {
   }
   twilioWebhookDispatch(
     context,
-    'https://webhooks.twilio.com/v1/Accounts/AC9b3b41d7b373ec279f36bff64fb9f3fe/Proxy/KSf68f3872d87f7b6fabe4a25b9b156971/Webhooks/Message',
+    `https://webhooks.twilio.com/v1/Accounts/${context.ACCOUNT_SID}/Proxy/${process.env.PROXY_SERVICE_SID}/Webhooks/Message`,
     event
   )
     .then(() => callback(null, ''))
