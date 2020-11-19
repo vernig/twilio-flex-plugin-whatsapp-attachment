@@ -42,10 +42,12 @@ exports.handler = async function (context, event, callback) {
       messageSid
     );
     messageAttributes.mediaUrl = interactionMediaUrl;
-    messageAttributes.mediaType = await fetchMediaType(
-      client,
-      interactionMediaUrl
-    );
+    if (messageAttributes.mediaUrl.startsWith('http')) {
+      messageAttributes.mediaType = await fetchMediaType(
+        client,
+        interactionMediaUrl
+      );
+    }
     await client.chat
       .services(chatService)
       .channels(chatChannel)
