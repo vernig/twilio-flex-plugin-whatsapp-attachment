@@ -24,6 +24,7 @@ npm install
 ```shell
 node provision.js
 ```
+* At the end of the script execution, follow the instructions provided by the script to modify the WhatsApp sender webhook
 
 ## Flex plugin 
 
@@ -32,6 +33,8 @@ node provision.js
 ```shell
 npm install
 ```
+* Copy `.env.template` into `.env.` and fill in the value for: 
+  * `REACT_APP_MAPBOX_GL_ACCESS_TOKEN`: this the token for MapBox. You can get a free one at https://www.mapbox.com/
 * Run locally 
 ```shell 
 twilio flex:plugins:start
