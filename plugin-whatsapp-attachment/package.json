@@ -7,6 +7,7 @@
   },
   "dependencies": {
     "flex-plugin-scripts": "^4.3.2-beta.0",
+    "mapbox-gl": "^1.12.0",
     "react": "16.5.2",
     "react-dom": "16.5.2",
     "react-player": "^2.6.2"
