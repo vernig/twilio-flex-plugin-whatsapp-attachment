@@ -1,5 +1,5 @@
 {
-  "name": "serverless",
+  "name": "flex-whatsapp-attachment",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -12,5 +12,8 @@
   },
   "engines": {
     "node": "10.17.0"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.1"
   }
 }
