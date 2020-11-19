@@ -1,4 +1,5 @@
 import React from 'react';
+import Map from '../Map/Map';
 
 export default class WhatsAppMessageBubble extends React.Component {
   render() {
@@ -25,6 +26,17 @@ export default class WhatsAppMessageBubble extends React.Component {
           </video>
         );
       }
+    } else if (mediaUrl && mediaUrl.startsWith('geo:')) {
+      let locationParsed = mediaUrl.slice(4).split(',');
+      return (
+        <Map
+          lat={locationParsed[1]}
+          lng={locationParsed[0]}
+          zoom={10}
+          mapWidth={'200px'}
+          mapHeight={'200px'}
+        />
+      );
     }
 
     return <></>;
