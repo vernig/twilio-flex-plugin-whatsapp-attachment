@@ -20,9 +20,6 @@ function json2urlencoded(bodyData) {
 }
 
 function twilioWebhookDispatch(context, url, event) {
-  const authorization = Buffer.from(
-    `${context.ACCOUNT_SID}:${context.AUTH_TOKEN}`
-  );
   options = {
     method: 'POST',
     body: json2urlencoded(event),
